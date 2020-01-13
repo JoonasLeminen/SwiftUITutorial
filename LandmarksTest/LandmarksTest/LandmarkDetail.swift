@@ -10,6 +10,8 @@ import SwiftUI
 
 struct LandmarkDetail: View {
     var landmark: Landmark
+    
+    @State private var showingAlert = false
 
     var body: some View {
         VStack {
@@ -20,6 +22,27 @@ struct LandmarkDetail: View {
             CircleImage(image: landmark.image)
                 .offset(x: 0, y: -130)
                 .padding(.bottom, -130)
+            
+                    Button(action: {
+                        self.showingAlert = true
+                    }) {
+                        Text("Delete")
+                        Image(systemName: "trash")
+                    }
+                        
+            .padding(.top, 20)
+            
+            .alert(isPresented: $showingAlert) {
+            Alert(title: Text("You are deleting this file"), message: Text("Really delete?"), primaryButton: .default(Text("Cancel")), secondaryButton: .destructive(Text("Delete")))
+                }
+                    
+//            Button(action: {
+//                        //Action
+//                    }) {
+//                        Text("Add")
+//                        Image(systemName: "plus")
+//                    }
+//            .padding(.top, 20)
 
             VStack(alignment: .leading) {
                 Text(landmark.name)
