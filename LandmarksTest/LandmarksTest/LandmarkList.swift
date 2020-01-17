@@ -9,17 +9,32 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    
+    @State var landmark = landmarkData
     var body: some View {
         NavigationView {
-            List(landmarkData){ landmark in
-                NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                    LandmarkRow(landmark: landmark)
+            List {
+                ForEach(landmark){ landmark in
+                    NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                        LandmarkRow(landmark: landmark)
+                    }
                 }
+                .onMove(perform: move)
+                .onDelete(perform: delete)
             }
             .navigationBarTitle(Text("Landmarks"))
-        .navigationBarItems(trailing: EditButton())
+            .navigationBarItems(trailing: EditButton())
         }
     }
+    
+    func move(from source: IndexSet, to destination: Int) {
+        landmark.move(fromOffsets: source, toOffset: destination)
+    }
+    
+    func delete(at offsets: IndexSet) {
+        landmark.remove(atOffsets: offsets)
+    }
+    
 }
 
 struct LandmarkList_Previews: PreviewProvider {
@@ -31,3 +46,4 @@ struct LandmarkList_Previews: PreviewProvider {
         }
     }
 }
+
