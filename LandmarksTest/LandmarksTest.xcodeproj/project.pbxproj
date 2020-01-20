@@ -108,7 +108,6 @@
 				6F339EB823CC48A700C0EC65 /* Info.plist */,
 				6F339EC923CC534A00C0EC65 /* LandmarkRow.swift */,
 				6F339ECB23CC555200C0EC65 /* LandmarkList.swift */,
-				6FED7C6F23D5824900C07570 /* UserData.swift */,
 				6F339EB223CC48A700C0EC65 /* Preview Content */,
 			);
 			path = LandmarksTest;
@@ -145,6 +144,7 @@
 		6F339ECE23CC571900C0EC65 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6FED7C6F23D5824900C07570 /* UserData.swift */,
 				6F10E35D23D18CE3004E7861 /* Data.swift */,
 				6F10E35F23D18D37004E7861 /* Landmark.swift */,
 			);
