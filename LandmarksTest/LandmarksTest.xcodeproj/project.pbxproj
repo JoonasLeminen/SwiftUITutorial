@@ -32,6 +32,7 @@
 		6F339EF023CC61B300C0EC65 /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F339EE323CC61B300C0EC65 /* turtlerock.jpg */; };
 		6F339EF123CC61B300C0EC65 /* hiddenlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F339EE423CC61B300C0EC65 /* hiddenlake.jpg */; };
 		6F339EF223CC61B300C0EC65 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F339EE523CC61B300C0EC65 /* chilkoottrail.jpg */; };
+		6FED7C7023D5824900C07570 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FED7C6F23D5824900C07570 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		6F339EE323CC61B300C0EC65 /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = turtlerock.jpg; path = ../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Resources/turtlerock.jpg; sourceTree = "<group>"; };
 		6F339EE423CC61B300C0EC65 /* hiddenlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hiddenlake.jpg; path = ../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Resources/hiddenlake.jpg; sourceTree = "<group>"; };
 		6F339EE523CC61B300C0EC65 /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chilkoottrail.jpg; path = ../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Resources/chilkoottrail.jpg; sourceTree = "<group>"; };
+		6FED7C6F23D5824900C07570 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				6F339EB823CC48A700C0EC65 /* Info.plist */,
 				6F339EC923CC534A00C0EC65 /* LandmarkRow.swift */,
 				6F339ECB23CC555200C0EC65 /* LandmarkList.swift */,
+				6FED7C6F23D5824900C07570 /* UserData.swift */,
 				6F339EB223CC48A700C0EC65 /* Preview Content */,
 			);
 			path = LandmarksTest;
@@ -240,6 +243,7 @@
 				6F10E36023D18D37004E7861 /* Landmark.swift in Sources */,
 				6F339EAF23CC48A600C0EC65 /* LandmarkDetail.swift in Sources */,
 				6F339ECA23CC534A00C0EC65 /* LandmarkRow.swift in Sources */,
+				6FED7C7023D5824900C07570 /* UserData.swift in Sources */,
 				6F10E35E23D18CE3004E7861 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
